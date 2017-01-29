@@ -1,0 +1,259 @@
+$myFont: 'Open Sans';
+
+.clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+input, textarea, a{ outline: none;}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $myFont;
+
+    .page {
+        width: 85%;
+        background-color: white;
+        margin: 70px auto 0;
+        margin-bottom: 70px;
+        .bio {
+            margin: 0 auto;
+            width: 85%;
+            height: 294px;
+
+            .upline {
+                background-color: orange;
+                height: 10px;
+            }
+
+            .bio-side {
+                display: block;
+                border-style: inset;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-color: #ddd;
+                border-width: 2px;
+                height: 280px;
+                .img-side {
+                    float: left;
+                    margin-top: 60px;
+                    border-width: 2px;
+                    width: 150px;
+                    height: 150px;
+                    border-color: #fff;
+                    border-width: 2px;
+                    border-style: groove;
+
+                    img {
+                        padding: 5px;
+                        height: 140px;
+                    }
+                }
+
+                .text-side {
+                    float: left;
+                    width: 35%;
+                    padding-top: 110px;
+                    padding-left: 20px;
+
+                    .name {
+                        font-size: 32px;
+                        color: #666;
+                        font-weight: 500;
+                    }
+
+                    .work {
+                        padding-top: 10px;
+                        font-size: 24px;
+                        color: #888;
+                        font-weight: 500;
+                    }
+                }
+
+                .connect-side {
+                    height: 100%;
+                    width: 30%;
+                    float: right;
+                    text-align: right;
+                    margin: 0 auto;
+
+                    .connect-img-box {
+                        padding-top: 60px;
+                        display: block;
+                        width: 250px;
+
+                        .connect-images {
+                            padding-left: 15px;
+                            float: left;
+
+                            img {
+                                height: 40px;
+                                width: 40px;
+                                background-color: black;
+                            }
+                        }
+                    }
+
+                    .connect-text-box {
+                        height: 100%;
+                        width: 100%;
+                        text-align: left;
+                        padding-top: 15px;
+                        color: #666;
+                        margin: 0 auto;
+
+                        .connect-text {}
+                    }
+                }
+            }
+        }
+
+        .profile {
+            width: 85%;
+            margin: 0 auto;
+            display: block;
+            height: 183px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-style: inset;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-color: #ddd;
+            border-width: 2px;
+            .profile-title {
+                float: left;
+                width: 30%;
+                font-size: 30px;
+                text-align: center;
+                color: #aaa;
+                height: 100%;
+            }
+            .profile-text {
+                font-size: 16px;
+                color: #444;
+            }
+        }
+        .experience {
+            height: 100px;
+            width: 85%;
+            width: 85%;
+            margin: 0 auto;
+            display: block;
+            height: 800px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .experience-title {
+                float: left;
+                width: 30%;
+                font-size: 30px;
+                text-align: center;
+                color: #aaa;
+            }
+            .exprience-r {
+                float: left;
+                width: 70%;
+
+            .experience-right-part , .exp2 {
+                border-style: inset;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-color: #ddd;
+                border-width: 2px;
+
+                padding-bottom: 50px;
+                .experinece-up-side {
+                    display: block;
+                    height: 100px;
+                    .experience-up-left {
+                        float: left;
+                        .experience-up-title {
+                            font-size: 26px;
+                            color: #555;
+                        }
+                        .experience-up-subtitle {
+                            font-size: 22px;
+                            color: #aaa;
+                        }
+                    }
+                    .experience-up-right {
+                        .experience-time {
+                            float: right;
+                            background-color: #aaa;
+                            width: 200px;
+                            height: 36px;
+                            color: white;
+                            font-size: 16px;
+                            text-align: center;
+                            padding-top: 14px;
+                        }
+                    }
+                }
+                .experience-text-side {
+                    height: 100px;
+
+                }
+                .experience-list-side {
+                    ul{
+                        li {
+                            position: relative;
+                            padding-left: 20px;
+                            margin: 5px 0;
+                            &:before{
+                                content: ' ';
+                                display: block;
+                                width: 8px;
+                                height: 8px;
+                                background-color: orange;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: 8px;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .exp2 {
+                padding-top: 50px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+            }
+
+        }
+        }
+        .footer {
+            background-color: #aaa;
+            height: 45px;
+            padding-top: 19px;
+            color: white;
+            width: 85%;
+            text-align: center;
+            margin: 0 auto;
+
+        }
+    }
+}
